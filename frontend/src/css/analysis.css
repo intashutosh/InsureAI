@@ -1,0 +1,174 @@
+/* ========================================
+   ANALYSIS PAGE
+   ======================================== */
+
+.analysis-page {
+  min-height: calc(100vh - 60px);
+  padding: 3rem 2rem 4rem;
+  background: linear-gradient(180deg, #f7f8fb 0%, #eef1f7 60%, #e8ecf4 100%);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.analysis-page-heading {
+  font-size: 2.25rem;
+  color: #111322;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.analysis-loading {
+  text-align: center;
+  padding: 3rem 2.5rem;
+  color: #4b5162;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 35px rgba(15, 23, 32, 0.06);
+  border: 1px solid rgba(102, 113, 141, 0.15);
+  font-size: 1.125rem;
+  letter-spacing: 0.01em;
+}
+
+.analysis-error {
+  color: var(--danger-color);
+  background-color: #fef2f2;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #fecaca;
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.analysis-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 45px rgba(15, 23, 32, 0.08);
+  border: 1px solid rgba(102, 113, 141, 0.12);
+  overflow: hidden;
+  margin-bottom: 2.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.analysis-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 60px rgba(15, 23, 32, 0.12);
+}
+
+.analysis-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #f1f3f7;
+  border-bottom: 1px solid rgba(102, 113, 141, 0.12);
+  display: block;
+}
+
+.analysis-card-body {
+  padding: 2rem 2.5rem 2.25rem;
+}
+
+.analysis-sub-heading {
+  font-size: 1.375rem;
+  color: #111322;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.analysis-no-prediction {
+  text-align: center;
+  padding: 2rem;
+  color: #5b6171;
+  background: #f5f6fa;
+  border-radius: 1rem;
+  border: 1px dashed rgba(102, 113, 141, 0.4);
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+.analysis-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.analysis-list-item {
+  padding: 1.5rem 1.75rem;
+  background: #fdfdff;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(102, 113, 141, 0.18);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.analysis-list-item:hover {
+  border-color: #6c63ff;
+  box-shadow: 0 15px 30px rgba(108, 99, 255, 0.08);
+  transform: translateX(6px);
+}
+
+.analysis-list-item strong {
+  color: #0f172a;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 90px;
+  margin-right: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.analysis-list-item br {
+  margin-bottom: 0.5rem;
+  display: block;
+  content: "";
+}
+
+.analysis-empty-state {
+  text-align: center;
+  padding: 3.5rem 2.25rem;
+  color: #4f566b;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 35px rgba(15, 23, 32, 0.07);
+  border: 1px solid rgba(102, 113, 141, 0.16);
+  font-size: 1.125rem;
+  letter-spacing: 0.015em;
+}
+
+@media (max-width: 768px) {
+  .analysis-page {
+    padding: 1.75rem 1rem 2.5rem;
+  }
+
+  .analysis-page-heading {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .analysis-card-body {
+    padding: 1.5rem;
+  }
+
+  .analysis-sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .analysis-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .analysis-list-item {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .analysis-list-item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    min-width: auto;
+  }
+}
+

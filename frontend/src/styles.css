@@ -1,0 +1,141 @@
+body { font-family: Inter, system-ui, sans-serif; padding: 0; margin: 0; }
+input { display:block; padding:8px; margin:6px 0; width:100%; box-sizing:border-box; }
+button { padding:8px 12px; margin:6px 0; }
+img { border:1px solid #ddd; border-radius:4px; }
+nav a { margin-right: 12px; }
+
+/* Generic page centering for full-screen forms/pages */
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f8;
+  padding: 2rem 1.5rem;
+}
+
+/* Reusable card container for auth forms and similar content */
+.card-form {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  width: 100%;
+  max-width: 420px;
+  text-align: left;
+}
+
+.card-form h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.75rem;
+  box-sizing: border-box;
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px #6366f1;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.form-error {
+  margin: 0 0 0.75rem;
+  color: #dc2626;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Role Selection Styles */
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: #f3f4f8;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(80, 80, 120, 0.08);
+  padding: 2.5rem 2rem;
+  margin-top: 3rem;
+}
+
+.role-selection-container h1 {
+  margin-bottom: 0.5rem;
+  color: #213547;
+  font-size: 2.4rem;
+}
+
+.role-selection-container .subtitle {
+  color: #555b6e;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.role-btn {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #646cff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(80, 80, 120, 0.05);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.role-btn.dealership-btn {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.role-btn.insurer-btn {
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+}
+
+.role-btn:hover {
+  background: #535bf2;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(80, 80, 120, 0.12);
+}

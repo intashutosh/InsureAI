@@ -1,0 +1,57 @@
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+
+# virtual environments
+venv/
+env/
+yolo_env/
+.venv/
+
+# =========================
+# YOLO / ML TRAINING FILES
+# =========================
+runs/
+yolo_dataset/
+yolodamage_dataset/
+cardd_dataset/
+carparts-seg/
+data1a/
+temp_uploads/
+
+# model weights
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Large files (optional)
+# =========================
+*.csv
+*.xlsx
+*.zip

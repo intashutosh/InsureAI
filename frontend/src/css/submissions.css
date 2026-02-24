@@ -1,0 +1,193 @@
+/* ========================================
+   SUBMISSIONS PAGE
+   ======================================== */
+
+.submissions-page {
+  min-height: calc(100vh - 60px);
+  padding: 2rem 1.5rem;
+  background-color: var(--bg-tertiary);
+}
+
+.submissions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.submissions-header {
+  margin-bottom: 2rem;
+}
+
+.submissions-header h3 {
+  font-size: 1.875rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.submissions-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.submission-card {
+  background: var(--bg-primary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.submission-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.submission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.submission-id {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.submission-status {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.submission-status.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.submission-status.approved {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.submission-status.rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.submission-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.submission-info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.submission-info-item label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.submission-info-item .value {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.submission-images {
+  margin-top: 1.5rem;
+}
+
+.submission-images h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.damage-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.damage-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-color);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.damage-image:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.estimate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.estimate-link:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.empty-submissions {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.empty-submissions-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.empty-submissions-message {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .submission-header {
+    flex-direction: column;
+  }
+  
+  .submission-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .damage-images-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
